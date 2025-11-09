@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebecca Ord Gallery</title>
+    <style>
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        /* Main top image (name/logo) */
+        .main-image {
+            max-width: 700px;
+            width: 90%;
+            margin: 40px auto;
+            display: block;
+        }
+
+        /* Navigation Links */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: 20px auto;
+        }
+
+        .container div {
+            background-color: #ffffff;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: normal; /* Less bold */
+            text-align: center;
+            transition: transform 0.2s, font-style 0.2s;
+        }
+
+        .container div a {
+            text-decoration: none;
+            color: #333;
+            transition: font-style 0.2s;
+        }
+
+        .container div:hover {
+            transform: translateY(-3px);
+        }
+
+        .container div:hover a {
+            font-style: italic;
+        }
+
+        /* Gallery Images */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns */
+            gap: 15px;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 0; /* Sharp corners */
+            transition: transform 0.3s, box-shadow 0.3s;
+             cursor: default
+        }
+
+        .image-grid img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .image-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Footer */
+        footer {
+            background-color: #ffffff;
+            padding: 15px 20px;
+            font-size: 14px;
+            color: #aaa; /* lighter grey */
+            text-align: left;
+            display: flex;
+            align-items: center;
+        }
+
+        footer img {
+            width: 18px;
+            height: 18px;
+            object-fit: contain;
+            vertical-align: middle;
+            margin-right: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main top image (your name) -->
+    <img src="Images\title.jpg" alt="Rebecca Ord" class="main-image">
+
+    <!-- Navigation Links -->
+    <div class="container">
+        <div><a href="Prints.html">Prints</a></div>
+        <div><a href="Drawings.html">Drawings</a></div>
+         <div><a href="About.html">About</a></div>
+    </div>
+
+    <!-- Gallery Images -->
+    <div class="image-grid">
+        <img src= "Images/angelcuttle.jpg" alt="Cuttlebone cast angel">
+        <img src= "Images/Prints/warrior-etching.jpg" alt="Etching of a warrior">
+        <img src= "Images/BodySeeksShelter.jpg" alt="Clay Urn">
+        <img src="Images/Prints/etching-chevron-edit.jpg" alt="Botanical etching">
+        <img src="Images/Marking-time-with-stones.jpg" alt="Mixed media painting">
+        <img src = "Images/With-swords-1.jpg" alt="Painting of an urn">
+        <img src="Images/idols.jpg" alt="Clay Idols">
+        <img src="Images/night-celestial.jpg" alt="Etching of a ship">
+        <img src="Images/skull-monoprint.jpg" alt= "Monoprint of a skull">
+        <img src="Images/window.jpg" alt="Cut out print">
+        <img src="Images/earthstruck.jpg" alt="Mixed media painting">
+        <img src="Images/angel.jpg" alt="Angel shell sculpture">
+        <img src="Images/Feathered-arrow-that-is-no-longer-there monoprint.jpg" alt="Monoprint of an urn">
+         <img src="Images/candle.jpg" alt="Painting of a candle">
+        <img src="Images/hermit.jpg" alt="Monoprint of a hermit">
+        <img src ="Images/brightharvest.jpg" alt="Mosaic with shells">
+        <img src ="Images/RO---To-lay-my-bones-on-the-rocks.jpg" alt="Monoprint of a person in mountainscape">
+        <img src ="Images/Star-print-crop.jpg" alt="Monoprint of a star">
+       
+
+
+
+    </div>
+
+  <!-- Footer -->
+<footer>
+  <img src="Images\hearts-in-arrows.jpg"
+       alt="Heart" style="width:54px; height:54px; object-fit:contain; vertical-align:middle; margin-right:8px;">
+  Website built by Rebecca Ord
+</footer>
+</body>
+</html>

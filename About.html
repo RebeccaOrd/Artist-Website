@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebecca Ord – About</title>
+    <style>
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        /* Main top image (name/logo) */
+        .main-image {
+            max-width: 700px;
+            width: 90%;
+            margin: 40px auto;
+            display: block;
+        }
+
+        /* Navigation Links */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: 20px auto;
+        }
+
+        .container div {
+            background-color: #ffffff;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: normal;
+            text-align: center;
+            transition: transform 0.2s, font-style 0.2s;
+        }
+
+        .container div a {
+            text-decoration: none;
+            color: #333;
+            transition: font-style 0.2s;
+        }
+
+        .container div:hover {
+            transform: translateY(-3px);
+        }
+
+        .container div:hover a {
+            font-style: italic;
+        }
+
+        /* About Content */
+        .about-section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: left;
+        }
+
+        .about-section h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #333;
+            display: inline-block;
+        }
+
+        .about-section h3 {
+            font-size: 22px;
+            margin-top: 25px;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .about-section p {
+            margin-bottom: 12px;
+        }
+
+        .about-section ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 12px;
+        }
+
+        /* Portrait / Image placeholder */
+        .portrait {
+            max-width: 250px;
+            width: 80%;
+            margin: 20px auto;
+            display: block;
+            border-radius: 6px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #ffffff;
+            padding: 15px 20px;
+            font-size: 14px;
+            color: #aaa;
+            text-align: left;
+            display: flex;
+            align-items: center;
+        }
+
+        footer img {
+            width: 18px;
+            height: 18px;
+            object-fit: contain;
+            vertical-align: middle;
+            margin-right: 6px;
+        }
+
+        @media(max-width: 600px){
+            .about-section h2 { font-size: 24px; }
+            .about-section h3 { font-size: 20px; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Main top image (your name/logo) -->
+    <img src="Images/title.webp" alt="Rebecca Ord" class="main-image">
+
+    <!-- Navigation Links -->
+    <div class="container">
+        <div><a href="Artist-Website.html">Home</a></div>
+        <div><a href="Prints.html">Prints</a></div>
+        <div><a href="Drawings.html">Drawings</a></div>
+        <div><a href="About.html">About</a></div>
+    </div>
+
+    <!-- About Content -->
+    <div class="about-section">
+       
+
+        <h1>About</h1>
+       
+        <p>Lives and works in Glasgow, Scotland</p>
+        <p>I work across painting, printmaking, and sculpture to explore themes of transformation, identity, and belonging. By using found and repurposed materials, I weave together ancient stories and contemporary narratives to reveal the intersections of myth, memory, and our connection to the land and ourselves. Through ritualistic processes, I delve into the personal and collective experiences of women, giving voice to our forgotten histories.</p>
+
+        <h3>Education</h3>
+        <ul>
+            <li>2014 BA(Hons), Edinburgh College of Art</li>
+            <li>2013 Leeds College of Art Foundation Year</li>
+        </ul>
+
+        <h3>Solo Shows</h3>
+        <ul>
+            <li>2019, <em>An Unromantic Reliance on Wings</em>, EMBASSY Gallery, Edinburgh</li>
+        </ul>
+
+        <h3>Group Exhibitions</h3>
+        <ul>
+            <li>2017 Edinburgh College of Art Degree Show, Edinburgh</li>
+            <li>2018 WYSIWYG (What You See Is What You Get), Eastvale Place, Glasgow</li>
+            <li>2023 Open Studios, The Space, Glasgow</li>
+            <li>2024 Proceed Moon, New Glasgow Society, Glasgow</li>
+        </ul>
+
+        <h3>Residencies and Awards</h3>
+        <ul>
+            <li>2024 The Museum of Loss and Renewal, Orkney</li>
+            <li>2024 Creative Scotland Open Fund</li>
+            <li>2024 Hope Scott Trust Fund</li>
+        </ul>
+
+        <h3>Collectives</h3>
+        <ul>
+            <li>2024 Found in Our Palms, Women Artists Collective</li>
+        </ul>
+
+    
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <img src="Images/hearts-in-arrows.jpg" alt="Heart" style="width:54px; height:54px; object-fit:contain; vertical-align:middle; margin-right:8px;">
+        Website built by Rebecca Ord
+    </footer>
+
+</body>
+</html>
